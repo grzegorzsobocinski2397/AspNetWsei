@@ -1,0 +1,28 @@
+﻿@model TreeModel
+
+<div id="success-alert" class="alert alert--success" style="display: none">Tree added successfully</div>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="ID">Tree ID</label>
+        <input asp-for="ID" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Description">Description</label>
+        <input asp-for="Description" class="form-control" />
+    </div>
+
+    <div class="form-check">
+        <input asp-for="IsCutDown" class="form-check-input" />
+        <label asp-for="IsCutDown" class="form-check-label">Is Tree Cut Down?</label>
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="Add new tree" />
+    </div>
+</form>
+
+@section Scripts {
+    <script src="~/js/addNewItem.js" ~></script>
+}
