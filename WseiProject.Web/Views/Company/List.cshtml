@@ -1,0 +1,14 @@
+﻿@model List<CompanyModel>
+
+<h1>Your companies:</h1>
+
+@foreach(var company in Model)
+{
+    @if(company.IsVisible)
+    {
+        <div>
+            <h2>@company.Name</h2>
+            <p>Description of this company is: @company.Description</p>
+        </div>
+    }
+}
