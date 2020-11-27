@@ -21,7 +21,7 @@ namespace WseiProject.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddDbContext<ExchangesDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ExchangeThings"));
+            services.AddDbContext<ExchangesDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ExchangeThings")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
